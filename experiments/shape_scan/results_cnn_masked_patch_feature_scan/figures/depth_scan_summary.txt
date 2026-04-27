@@ -1,0 +1,5 @@
+CSV: /workspace/AOFE_Law/superposition-law-agop/experiments/shape_scan/results_cnn_masked_patch_feature_scan/dry_run_configs.csv
+Mode: dry-run / config table only (no validation loss in file).
+
+Figures: width & param sweep vs depth, param error %.
+Output dir: /workspace/AOFE_Law/superposition-law-agop/experiments/shape_scan/results_cnn_masked_patch_feature_scan/figures
