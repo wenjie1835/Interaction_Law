@@ -1,0 +1,22 @@
+列说明（与 ntp_sweep_merged_by_budget_and_shape.csv 对应）
+============================================
+target_n          目标参数量/参数预算 N（与脚本 target_n 一致）
+depth              Transformer 层数 L（深度）
+d_model            模型宽度（通道维）
+n_heads, d_ff      注意力头数与 FFN 维（与主实验一致）
+active_n           与实现相关的有效/活跃参数量（原表字段）
+depth_over_d_model 深/宽 = L / d_model（与 CSV 中 alpha 一致）
+d_model_over_depth 宽/深 = d_model / L
+train_ce, val_ce, test_ce  各划分交叉熵（主要 loss 可看 val_ce / test_ce）
+aofe, log10_aofe   输入维 AGOP 非对角能量及其 log10
+aofe_ratio         非对角 Frobenius 能量占 AGOP 总能量的比例
+wtw_aofe_ratio     原表中的 wtw 相关 AOFE 比例
+steps_run, elapsed_s  训练步数与墙钟时间（秒）
+param_budget_label 人类可读的参数量标签
+train_mse, val_mse, test_mse  教师-学生回归 MSE（仅 transformer_shape_agop 任务有值）
+row_source  数据来源：空=WikiText 字节 NTP；teacher_student_agop=transformer_shape_agop.py
+
+合并规则：同 (target_n, depth, d_model) 多来源时，保留「字段更完整」的一行；
+10M：depth 4,5,6,8 以 results_ntp_10M_parallel 下完整运行为准（若存在）；depth=14（d_model=240）以 results_ntp_10M_d14 为准。
+results_transformer_agop_10M_d12：N=10M、L=12 的教师-学生形状（CE 列为空，用 MSE 列）。
+生成脚本: build_consolidated_ntp_table.py

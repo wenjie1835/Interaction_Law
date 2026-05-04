@@ -1,0 +1,30 @@
+CSV: /home/sunwenjie/workspace/Interaction_Law/experiments/shape_scan/results_mlp_agop_shape_scan/mlp_shape_scan_results.csv
+Schema: mlp
+Loss column: best_val_loss
+
+Lowest loss row: depth=13, width=104, param_count=290785
+  depth/width (L/W) = 0.125000
+  width/depth (W/L) = 8.0000
+  best_val_loss = 0.007483
+  aofe = 8.546844e+00, aofe_ratio = 0.920411
+  wtw_in_proj_mean_cos2 = 0.052510
+
+Pearson r (W^T W mean cos2 vs metrics):
+  vs best_val_loss: -0.9401
+  vs aofe: 0.1478
+  vs aofe_ratio: 0.2627
+
+Sorted by loss (best first):
+  D=13 W= 104  D/W=0.12500  best_val_loss=0.007483  wtw_in_proj_mean_cos2=0.0525
+  D=12 W= 112  D/W=0.10714  best_val_loss=0.009479  wtw_in_proj_mean_cos2=0.0513
+  D=14 W= 104  D/W=0.13462  best_val_loss=0.009592  wtw_in_proj_mean_cos2=0.0549
+  D=11 W= 112  D/W=0.09821  best_val_loss=0.010401  wtw_in_proj_mean_cos2=0.0557
+  D= 6 W= 152  D/W=0.03947  best_val_loss=0.011848  wtw_in_proj_mean_cos2=0.0439
+  D= 7 W= 144  D/W=0.04861  best_val_loss=0.012057  wtw_in_proj_mean_cos2=0.0423
+  D=10 W= 120  D/W=0.08333  best_val_loss=0.012626  wtw_in_proj_mean_cos2=0.0505
+  D= 9 W= 128  D/W=0.07031  best_val_loss=0.012869  wtw_in_proj_mean_cos2=0.0490
+  D= 8 W= 136  D/W=0.05882  best_val_loss=0.015245  wtw_in_proj_mean_cos2=0.0486
+  D= 5 W= 168  D/W=0.02976  best_val_loss=0.016975  wtw_in_proj_mean_cos2=0.0395
+  D= 4 W= 192  D/W=0.02083  best_val_loss=0.028721  wtw_in_proj_mean_cos2=0.0326
+  D= 3 W= 216  D/W=0.01389  best_val_loss=0.032082  wtw_in_proj_mean_cos2=0.0245
+  D= 2 W= 264  D/W=0.00758  best_val_loss=0.036009  wtw_in_proj_mean_cos2=0.0254

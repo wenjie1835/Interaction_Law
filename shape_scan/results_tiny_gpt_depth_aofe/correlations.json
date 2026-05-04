@@ -1,0 +1,22 @@
+{
+  "final_val_loss_vs_aofe": {
+    "pearson": -0.08715971464568963,
+    "spearman": -0.7464285714285714
+  },
+  "final_val_loss_vs_aofe_ratio": {
+    "pearson": -0.7607635062385624,
+    "spearman": -0.8607142857142858
+  },
+  "final_val_loss_vs_agop_mean_cos2": {
+    "pearson": -0.18110323380796634,
+    "spearman": -0.7892857142857143
+  },
+  "aofe_vs_agop_mean_cos2": {
+    "pearson": 0.9921585718716779,
+    "spearman": 0.9857142857142858
+  },
+  "aofe_ratio_vs_agop_mean_cos2": {
+    "pearson": 0.7374589005256514,
+    "spearman": 0.9678571428571429
+  }
+}

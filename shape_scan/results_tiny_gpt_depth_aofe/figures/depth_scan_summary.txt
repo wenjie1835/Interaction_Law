@@ -1,0 +1,32 @@
+CSV: /home/sunwenjie/workspace/Interaction_Law/experiments/shape_scan/results_tiny_gpt_depth_aofe/depth_scan_results.csv
+Schema: gpt
+Loss column: final_val_loss
+
+Lowest loss row: n_layer=2, n_embd=344, n_head=8
+  depth/width (L/W) = 0.005814
+  width/depth (W/L) = 172.0000
+  final_val_loss = 1.279233
+  aofe = 1.798807e+06, aofe_ratio = 0.980546
+  agop_mean_cos2 = 0.530661
+
+Pearson r (AGOP mean cos² vs metrics):
+  vs final_val_loss: -0.5051
+  vs aofe: 0.9747
+  vs aofe_ratio: 0.7648
+
+Sorted by loss (best first):
+  L= 2 C=344  L/C=0.00581  final_val_loss=1.279233  agop_mean_cos2=0.5307
+  L= 5 C=216  L/C=0.02315  final_val_loss=1.288761  agop_mean_cos2=0.0676
+  L= 6 C=200  L/C=0.03000  final_val_loss=1.295574  agop_mean_cos2=0.0722
+  L= 7 C=184  L/C=0.03804  final_val_loss=1.295673  agop_mean_cos2=0.0617
+  L= 3 C=280  L/C=0.01071  final_val_loss=1.297392  agop_mean_cos2=0.6124
+  L= 4 C=248  L/C=0.01613  final_val_loss=1.299615  agop_mean_cos2=0.0764
+  L= 8 C=176  L/C=0.04545  final_val_loss=1.304437  agop_mean_cos2=0.0496
+  L=11 C=152  L/C=0.07237  final_val_loss=1.311142  agop_mean_cos2=0.0519
+  L= 9 C=160  L/C=0.05625  final_val_loss=1.313861  agop_mean_cos2=0.0451
+  L=12 C=144  L/C=0.08333  final_val_loss=1.316736  agop_mean_cos2=0.0470
+  L=10 C=152  L/C=0.06579  final_val_loss=1.320434  agop_mean_cos2=0.0542
+  L=13 C=136  L/C=0.09559  final_val_loss=1.328909  agop_mean_cos2=0.0391
+  L=14 C=128  L/C=0.10938  final_val_loss=1.331536  agop_mean_cos2=0.0430
+  L=15 C=128  L/C=0.11719  final_val_loss=1.332977  agop_mean_cos2=0.0456
+  L=16 C=120  L/C=0.13333  final_val_loss=1.350046  agop_mean_cos2=0.0407

@@ -1,0 +1,10 @@
+{
+  "final_val_loss_vs_aofe": {
+    "pearson": -0.3199357856041469,
+    "spearman": -0.4818181818181818
+  },
+  "final_val_loss_vs_aofe_ratio": {
+    "pearson": -0.46272837988914656,
+    "spearman": -0.5454545454545454
+  }
+}
